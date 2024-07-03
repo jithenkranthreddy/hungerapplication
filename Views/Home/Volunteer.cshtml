@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<main>
+    <section>
+        <h2>Volunteer</h2>
+        <p>We appreciate your interest in volunteering for our cause. Your contribution can make a real difference in the lives of those in need.</p>
+    </section>
+    <section>
+        <h2>How to Volunteer</h2>
+        <p>If you would like to volunteer, please fill out the form below and let us know how you would like to contribute. We will get in touch with you as soon as possible.</p>
+    </section>
+    <section>
+        <h2>Enter Your Details</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">How would you like to contribute?</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="button" onclick="submitVolunteerForm()">Submit</button>
+        </form>
+        <div id="success-message" style="display: none; color: green; font-weight: bold; font-size: 20px;">Thank you for volunteering! We will contact you shortly.</div>
+    </section>
+</main>

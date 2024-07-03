@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<main>
+    <section>
+        <h2>Donate</h2>
+        <p>This section allows you to contribute to our cause by making a donation. Your generosity will help us provide food to those in need.</p>
+    </section>
+    <section>
+        <h2>How to Donate</h2>
+        <p>To make a donation, please visit our website or contact us directly. Your support is greatly appreciated!</p>
+        <p>Website: <a href="https://hunger.dedezigners.com/">https://hunger.dedezigners.com/</a></p>
+        <p>Contact: donate@zerohungerapp.com</p>
+    </section>
+    <section>
+        <h2>Enter Your Details and Donate</h2>
+        <form id="donate-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="amount">Donation Amount:</label><br>
+            <input type="text" id="amount" name="amount" required><br>
+            <button type="button" onclick="donate()">Donate</button>
+        </form>
+        <div id="success-message" style="display: none; color: green; font-weight: bold; font-size: 20px;">Thank you for your donation! Your support means a lot to us.</div>
+
+    </section>
+</main>
